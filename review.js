@@ -20,18 +20,30 @@
 // =================================================
 
 // 1.) Declare a variable
+   let  myFirstName = "Kiran";
 
 // 2.) Change the value of this variable
+      
+  //myFirstName = "Akhil";
 
 // 3.) Change the data type of this variable
+      //myFirstName  = 123;
+
 
 // 4.) Create another variable and the one from above to concatenate
+      let  myLastName = "Jaini"
+      //console.log("My  name is :" + myFirstName + '' +  myLastName);
+
+
+
 
 // 5.) Use any of the variables above or create new ones and print using string interpolation
+//console.log("My name is changed from :" + myFirstName + " to swathi " +  myLastName);
+ 
 
 // ================ Variable Names =================
 /* 
-    • Case-sentive! Try it out! :O
+    • Case-sentive! Try it out! :O 
     • Can contain letters, digits, or the symbols $ and _
     • Can't start with 0-9
     • Can't use reserved keywords in JS such as var, function, return, etc. 
@@ -44,38 +56,87 @@
 // Look up the following string methods!
 
 // Using charAt(), print the letter i in Sabrina
+let friend = "sabrina"
+console.log(friend.charAt(4));
 
 // Define Unicode in a comment, and get the Unicode using charCodeAt() of the third character in Teddy
+let myToy = "Teddy"
+ let code = myToy.charCodeAt(2);
+ console.log(code);
 
 // Using fromCharCode() - make it readable for us :). You'll see!
+ 
+
+let text = String.fromCharCode(72,69,76,79);
+console.log(text);
+
+
+
+
+
+
 
 // Take your first and last name and concat()
+console.log(myFirstName+ myLastName);
 
 // Create a string and make it return true using startsWith()
+let string1 =" Today is cloudy";
+console.log(string1.startsWith(' Tod'));
+
+
+
 
 // Now use any variable with endsWith() and return false
 
 // Finish the following sentence. Use includes() and return true.
 const ozgur = 'Once upon a time Ozgur looked up at the Moon, '
+console.log(ozgur.endsWith('on'));
 
 // Help! I'm looking for my cow! Using indexOf() help Josh find his cow. What's the index of cow?
+
 let joshHadALittleLambOopsCow = "Josh lives in a farm. Josh was overwhelmed with coding. Josh is stressed out. Josh fed the chickens this morning. He watered his plants. He took his cow Betsy on a walk. Josh went home without Betsy. Josh went to bed that night, and realized he went home alone."
+
+let helpFindCowIndex = joshHadALittleLambOopsCow.indexOf("cow");
+
+console.log(helpFindCowIndex);
 
 // Oh no! The alien doppelgangers are here. Let's use our laserbeam lastIndexOf() to shoot down the last alien named Vanessa in the String Universe.
 
 const vanessa = "I am the Alpha Vanessa. I am the Omega Vanessa. We do not come in peace."
+const searchTerm = "Vanessa";
+const result = vanessa.lastIndexOf("Vanessa")
+console.log(`The index of  1st  "${searchTerm}"  from the end is  "${result}" `);
+
+ 
+
 
 // Can we use length for strings? I don't know, you tell me.
-const noWeCantTeo = "but did you try it out though?"
+//We can use length but it counts the spaces .Like below code it counts the spaces .
+
+const noWeCantTeo = "but did you try it out though?" 
+
+console.log(noWeCantTeo.length);
+
+
 
 // If only it was this easy to replace() my ex. Totally not joking, LOL. JK
 const replaceGokuWithVegeta = "For my DBZ fans, we all know Goku is the best!"
 
+const result1 = replaceGokuWithVegeta.replace("Goku","Vegeta");
+
+console.log(result1);
+
 // Josh has been forgetful lately. Let's help Josh by using search(), and find their right 'wifey'. 
 const joshIsLookingForWifey = "WIFEY 1, wifey 2, WiFeY 3, Wifey 4"
+const position = joshIsLookingForWifey.search('wifey' );
+console.log(position);
 
 // I guess we can share this pizza sentence. Use slice() to return the other half of pizza.
 const pizzaSentence = "pizza, other half of pizza"
+const sliceNumber = pizzaSentence.search('other');
+console.log(sliceNumber);
+console.log(pizzaSentence.slice(sliceNumber));
+
 
 // Now using the pizza sentence, return only pizza (before the comma)
 
