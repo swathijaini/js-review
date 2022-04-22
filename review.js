@@ -20,7 +20,7 @@
 // =================================================
 
 // 1.) Declare a variable
-   let  myFirstName = "Kiran";
+   let  myFirstName = "Amulya";
   
 
 // 2.) Change the value of this variable
