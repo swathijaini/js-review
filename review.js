@@ -25,7 +25,7 @@
 
 // 2.) Change the value of this variable
       
-   myFirstName = "Akhil";
+   myFirstName = "Swathi";
 
 // 3.) Change the data type of this variable
        myFirstName  = 123;
